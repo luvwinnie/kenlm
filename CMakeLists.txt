@@ -22,7 +22,7 @@ find_package(Eigen3 3.1.0 CONFIG)
 include(CMakeDependentOption)
 cmake_dependent_option(ENABLE_INTERPOLATE "Build interpolation program (depends on Eigen3)" ON "EIGEN3_FOUND AND NOT WIN32" OFF)
 
-set(KENLM_MAX_ORDER 6 CACHE STRING "Maximum supported ngram order")
+set(KENLM_MAX_ORDER 10 CACHE STRING "Maximum supported ngram order")
 
 if (BUILD_PYTHON_STANDALONE)
   # Build a shared lib artifact in the same way the cpython setup.py builds

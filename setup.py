@@ -15,7 +15,7 @@ def compile_test(header, library):
     return os.system(command) == 0
 
 # Use an environment variable
-max_order = os.getenv("MAX_ORDER", "6")
+max_order = os.getenv("MAX_ORDER", "10")
 
 # Try to get from --config-settings, if present
 is_max_order = [s for s in sys.argv if "--max_order" in s]
